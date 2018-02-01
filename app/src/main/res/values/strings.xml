@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="popular">Popular</string>
+    <string name="top">Top</string>
+    <string name="action_settings">Configuracion</string>
+    <string name="estreno">Fecha Estreno</string>
+    <string name="titulo_original">Titulo Original</string>
+    <string name="title_activity_detail">Pelicula</string>
+    <string name="nombre">Nombre</string>
+    <string name="idioma_original">Idioma original</string>
+    <string name="descripci_n_general">Descripción general</string>
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardTicket"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="123123"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtEtiTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNombre"
+            android:layout_margin="10dp"
+            android:text="@string/titulo_original" />
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtEtiTitulo"
+            android:layout_toEndOf="@+id/txtEtiTitulo"
+            android:layout_toStartOf="@+id/imgPoster"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtEtiFechaEstreno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEtiTitulo"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/estreno" />
+
+
+        <TextView
+            android:id="@+id/txtFechaEstreno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtEtiFechaEstreno"
+            android:layout_toEndOf="@+id/txtEtiFechaEstreno"
+            android:layout_toStartOf="@+id/imgPoster"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/imgPoster"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txtNombre"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
