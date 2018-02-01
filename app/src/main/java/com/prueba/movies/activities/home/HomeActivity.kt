@@ -1,7 +1,10 @@
 package com.prueba.movies.activities.home
 
+import android.app.SearchManager
+import android.content.Context
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.SearchView
 import android.view.Menu
 import android.view.MenuItem
 import com.prueba.movies.R
@@ -14,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
 class HomeActivity : AppCompatActivity() {
-
+    lateinit var search: SearchView
     /**
      * The [android.support.v4.view.PagerAdapter] that will provide
      * fragments for each of the sections. We use a
@@ -52,6 +55,11 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
+        val manager = getSystemService(Context.SEARCH_SERVICE) as SearchManager
+        search = menu.findItem(R.id.action_find).actionView as SearchView
+        search.setSearchableInfo(manager.getSearchableInfo(componentName))
+        homeView.menu = menu
+        homePresenter.onCreateMenu()
         return true
     }
 

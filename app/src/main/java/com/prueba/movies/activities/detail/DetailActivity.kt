@@ -46,9 +46,6 @@ class DetailActivity : AppCompatActivity() {
         return id
     }
 
-    fun changeTitle(string: String?) {
-        toolbar.title = string
-    }
 
     override fun onDestroy() {
         detailPresenter.onDestroy()

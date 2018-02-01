@@ -9,11 +9,11 @@ import io.realm.Realm
 
 class SplashModel(private val network: MoviesNetwork) {
     fun loadPopular(api_key: String, page: String): Observable<String> {
-        return network.sendPopular(api_key, page)
+        return network.sendPopular(api_key, "es-ES", page)
     }
 
     fun loadTop(api_key: String, page: String): Observable<String> {
-        return network.sendTop(api_key, page)
+        return network.sendTop(api_key, "es-ES", page)
     }
 
     fun saveTopRealm(top: String): Observable<Any?>? {

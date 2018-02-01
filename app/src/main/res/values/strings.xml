@@ -9,5 +9,6 @@
     <string name="nombre">Nombre</string>
     <string name="idioma_original">Idioma original</string>
     <string name="descripci_n_general">Descripción general</string>
+    <string name="img">img</string>
 
 </resources>

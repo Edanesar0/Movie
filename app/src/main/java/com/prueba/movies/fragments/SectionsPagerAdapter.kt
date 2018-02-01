@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
+import com.prueba.movies.activities.search.SearchActivity
 import com.prueba.movies.fragments.popular.FragmentPopular
 import com.prueba.movies.fragments.top.FragmentTop
 
@@ -23,6 +24,11 @@ class SectionsPagerAdapter(fm: FragmentManager, val activity: Activity) : Fragme
             }
             1 -> {
                 fragment = Fragment.instantiate(activity, FragmentTop::class.java.name)
+                val args = Bundle()
+                fragment.arguments = args
+            }
+            2 -> {
+                fragment = Fragment.instantiate(activity, SearchActivity::class.java.name)
                 val args = Bundle()
                 fragment.arguments = args
             }
