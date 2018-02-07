@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SmartTickets</string>
+
+    <!-- Strings related to login -->
+    <string name="error_invalid_email">El email no es valido</string>
+    <string name="error_invalid_password">La contraseña es demasiada corta</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="forgot_password">¿Olvidó su contraseña?</string>
+    <string name="sign_in">Iniciar sesion</string>
+    <string name="password">Contraseña</string>
+    <string name="email">Email</string>
+    <string name="create_account">Crear cuenta</string>
+    <string name="img">img</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="name">Nombre</string>
+    <string name="birthday">Cumpleaños</string>
+    <string name="already_have_account">¿Tienes una cuenta?</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="apellido">Apellido</string>
+    <string name="telefono">Telefono</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Tickets</string>
+    <string name="tab_text_2">Proyectos</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

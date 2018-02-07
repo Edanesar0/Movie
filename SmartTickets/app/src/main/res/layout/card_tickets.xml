@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardTicket"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtProyecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txtEtiAsignado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtProyecto"
+            android:text="Asignado por" />
+
+        <TextView
+            android:id="@+id/txtAsignado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtEtiAsignado"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/txtEtiAsignado"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtEtiNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEtiAsignado"
+            android:layout_marginTop="10dp"
+            android:text="Responsable " />
+
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtEtiNombre"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/txtEtiNombre"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtEtiFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEtiNombre"
+            android:layout_marginTop="10dp"
+            android:text="Fecha" />
+
+
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtEtiFecha"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/txtEtiFecha"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/txtEtiEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEtiFecha"
+            android:layout_marginTop="10dp"
+            android:text="Estado" />
+
+
+        <TextView
+            android:id="@+id/txtEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtEtiEstado"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/txtEtiFecha"
+            android:text="TextView" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
